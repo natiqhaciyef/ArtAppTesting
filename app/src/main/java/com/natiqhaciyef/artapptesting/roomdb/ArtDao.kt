@@ -1,4 +1,4 @@
-package com.natiqhaciyef.artapptesting.data.roomdb
+package com.natiqhaciyef.artapptesting.roomdb
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao

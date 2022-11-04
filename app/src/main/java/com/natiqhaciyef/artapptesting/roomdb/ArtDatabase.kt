@@ -1,4 +1,4 @@
-package com.natiqhaciyef.artapptesting.data.roomdb
+package com.natiqhaciyef.artapptesting.roomdb
 
 import androidx.room.Database
 import androidx.room.RoomDatabase

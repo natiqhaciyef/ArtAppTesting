@@ -51,7 +51,6 @@ dependencies {
 
     implementation "com.google.dagger:hilt-android:2.43.2"
     kapt "com.google.dagger:hilt-android-compiler:2.43.2"
-    //implementation "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03"
     kapt "androidx.hilt:hilt-compiler:1.0.0"
 
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4'
@@ -62,7 +61,7 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.5.1"
     implementation "androidx.lifecycle:lifecycle-runtime:2.5.1"
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.5.1"
-    implementation "androidx.activity:activity-ktx:1.6.1"
+    implementation "androidx.activity:activity-ktx:1.5.0"
 
     implementation "androidx.room:room-runtime:2.4.3"
     kapt "androidx.room:room-compiler:2.4.3"
@@ -74,7 +73,6 @@ dependencies {
     implementation "androidx.navigation:navigation-ui-ktx:2.5.3"
     implementation 'com.github.bumptech.glide:glide:4.14.2'
     kapt 'com.github.bumptech.glide:compiler:4.14.2'
-
 
     // TestImplementations
     implementation "androidx.test:core:1.4.0"
@@ -97,13 +95,9 @@ dependencies {
     androidTestImplementation "org.mockito:mockito-core:4.7.0"
     androidTestImplementation 'com.google.dagger:hilt-android-testing:2.43.2'
     kaptAndroidTest 'com.google.dagger:hilt-android-compiler:2.43.2'
-    debugImplementation "androidx.fragment:fragment-testing:1.6.0-alpha03"
+    debugImplementation "androidx.fragment:fragment-testing:1.5.4"
 
     androidTestImplementation("androidx.test.espresso:espresso-contrib:3.4.0") {
         exclude group : "org.checkerframework", module : "checker"
     }
-}
-
-kapt {
-    correctErrorTypes true
 }

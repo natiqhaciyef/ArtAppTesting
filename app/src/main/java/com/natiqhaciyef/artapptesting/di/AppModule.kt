@@ -5,7 +5,6 @@ import androidx.room.Room
 import com.natiqhaciyef.artapptesting.retrofit.api.PixabayAPI
 import com.natiqhaciyef.artapptesting.retrofit.util.RetrofitDetails.BASE_URL
 import com.natiqhaciyef.artapptesting.roomdb.ArtDatabase
-import com.natiqhaciyef.artapptesting.roomdb.ArtModel
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

@@ -2,8 +2,14 @@ package com.natiqhaciyef.artapptesting.di
 
 import android.content.Context
 import androidx.room.Room
+import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
+import com.natiqhaciyef.artapptesting.R
+import com.natiqhaciyef.artapptesting.repository.ArtRepository
+import com.natiqhaciyef.artapptesting.repository.ArtRepositoryImpl
 import com.natiqhaciyef.artapptesting.retrofit.api.PixabayAPI
 import com.natiqhaciyef.artapptesting.retrofit.util.RetrofitDetails.BASE_URL
+import com.natiqhaciyef.artapptesting.roomdb.ArtDao
 import com.natiqhaciyef.artapptesting.roomdb.ArtDatabase
 import dagger.Module
 import dagger.Provides
@@ -35,4 +41,18 @@ object AppModule {
             .baseUrl(BASE_URL)
             .build()
             .create(PixabayAPI::class.java)
+
+    @Singleton
+    @Provides
+    fun injectGlide(@ApplicationContext context: Context) =
+        Glide.with(context)
+            .setDefaultRequestOptions(RequestOptions()
+                .placeholder(R.drawable.ic_launcher_foreground)
+                .error(R.drawable.ic_launcher_foreground)
+            )
+
+    @Singleton
+    @Provides
+    fun injectRepository(artDao:ArtDao, api: PixabayAPI) = ArtRepositoryImpl(artDao, api) as ArtRepository
+
 }

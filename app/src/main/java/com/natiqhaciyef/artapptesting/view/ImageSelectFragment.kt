@@ -6,8 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.natiqhaciyef.artapptesting.R
+import com.natiqhaciyef.artapptesting.adapter.ImageApiAdapter
+import javax.inject.Inject
 
-class ImageSelectFragment : Fragment() {
+class ImageSelectFragment @Inject constructor(
+    private val adapter: ImageApiAdapter
+): Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

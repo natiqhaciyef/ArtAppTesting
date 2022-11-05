@@ -7,10 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.activity.OnBackPressedCallback
 import androidx.navigation.fragment.findNavController
+import com.bumptech.glide.RequestManager
 import com.natiqhaciyef.artapptesting.R
 import kotlinx.android.synthetic.main.fragment_details.*
+import javax.inject.Inject
 
-class DetailsFragment : Fragment() {
+class DetailsFragment @Inject constructor(
+    val glide: RequestManager
+) : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

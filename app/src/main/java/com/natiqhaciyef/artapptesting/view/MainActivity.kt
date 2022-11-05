@@ -2,8 +2,8 @@ package com.natiqhaciyef.artapptesting.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.FragmentFactory
 import com.natiqhaciyef.artapptesting.R
+import com.natiqhaciyef.artapptesting.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 

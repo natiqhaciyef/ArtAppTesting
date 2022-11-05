@@ -6,14 +6,6 @@
     app:startDestination="@id/artFragment">
 
     <fragment
-        android:id="@+id/artFragment"
-        android:name="com.natiqhaciyef.artapptesting.view.ArtFragment"
-        android:label="ArtFragment" >
-        <action
-            android:id="@+id/action_artFragment_to_detailsFragment"
-            app:destination="@id/detailsFragment" />
-    </fragment>
-    <fragment
         android:id="@+id/detailsFragment"
         android:name="com.natiqhaciyef.artapptesting.view.DetailsFragment"
         android:label="fragment_details"
@@ -27,4 +19,13 @@
         android:name="com.natiqhaciyef.artapptesting.view.ImageSelectFragment"
         android:label="fragment_image_select"
         tools:layout="@layout/fragment_image_select" />
+    <fragment
+        android:id="@+id/artFragment"
+        android:name="com.natiqhaciyef.artapptesting.view.ArtFragment"
+        android:label="fragment_art"
+        tools:layout="@layout/fragment_art" >
+        <action
+            android:id="@+id/action_artFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
 </navigation>

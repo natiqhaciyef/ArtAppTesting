@@ -12,7 +12,7 @@ import javax.inject.Inject
 
 class ImageApiAdapter @Inject constructor(
     val glide: RequestManager
-) : RecyclerView.Adapter<ImageApiAdapter.ImageViewHolder>(){
+) : RecyclerView.Adapter<ImageApiAdapter.ImageViewHolder>() {
 
     private val diffUtil = object : DiffUtil.ItemCallback<String>() {
         override fun areItemsTheSame(oldItem: String, newItem: String): Boolean {
@@ -30,31 +30,34 @@ class ImageApiAdapter @Inject constructor(
         set(value) = asyncDiffUtil.submitList(value)
 
 
-    class ImageViewHolder(val binding: RecyclerImageSelectRowBinding) : RecyclerView.ViewHolder(binding.root)
+    class ImageViewHolder(val binding: RecyclerImageSelectRowBinding) :
+        RecyclerView.ViewHolder(binding.root)
 
-    private var onItemClickListener : ((String) -> Unit) ? = null
+    private var onItemClickListener: ((String) -> Unit)? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ImageViewHolder {
-        val binding = RecyclerImageSelectRowBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = RecyclerImageSelectRowBinding.inflate(
+            LayoutInflater.from(parent.context),
+            parent,
+            false
+        )
         return ImageViewHolder(binding)
     }
 
-    fun onClick(listener: (String)-> Unit){
+    fun onClick(listener: (String) -> Unit) {
         onItemClickListener = listener
     }
 
     override fun onBindViewHolder(holder: ImageViewHolder, position: Int) {
         val element = holder.binding
-
-        element.apply {
-            glide.load(imageList[position]).into(recyclerViewImage)
-            onClick {
-                onItemClickListener?.let {
-                    it(imageList[position])
-                }
+        holder.itemView.setOnClickListener {
+            onItemClickListener?.let {
+                it(imageList[position])
             }
         }
-
+        element.apply {
+            glide.load(imageList[position]).into(recyclerViewImage)
+        }
     }
 
     override fun getItemCount(): Int {

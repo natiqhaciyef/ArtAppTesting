@@ -10,15 +10,14 @@
 
 
     <!-- Custom colors -->
-    <color name="mainScreenColor1">#004d40</color>
     <color name="mainScreenColor2">#ffab40</color>
+    <color name="mainScreenColor1">#E854E6BB</color>
 
-    <color name="mainScreenColor1_light">#39796b</color>
-    <color name="mainScreenColor2_light">#ffdd71</color>
+    <color name="mainScreenColor1_light">#ffdd71</color>
+    <color name="mainScreenColor2_light">#39796b</color>
+    <color name="mainScreenColor_n">#004d40</color>
 
-    <color name="mainScreenColor_n">#ffdd71</color>
-
-    <color name="mainScreenColor1_dark">#00251a</color>
     <color name="mainScreenColor2_dark">#c77c02</color>
+    <color name="mainScreenColor1_dark">#39796b</color>
 
 </resources>

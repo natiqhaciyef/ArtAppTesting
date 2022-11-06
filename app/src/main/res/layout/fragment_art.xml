@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        app:backgroundTint="@color/design_default_color_secondary"
+        app:backgroundTint="@color/mainScreenColor2"
         app:fabSize="normal"
         app:layout_anchorGravity="bottom|right|end"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -30,7 +30,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.989"
-        app:srcCompat="@drawable/ic_launcher_foreground"
+        app:srcCompat="@drawable/search_icon"
         tools:ignore="SpeakableTextPresentCheck"
         android:contentDescription="Nothing" />
 

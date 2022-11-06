@@ -45,7 +45,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Artist name"
-                android:textSize="20dp"
+                android:textSize="18sp"
                 android:layout_margin="5dp"
                 android:textColor="@color/black"
                 />
@@ -55,7 +55,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Art year"
-                android:textSize="20dp"
+                android:textSize="18sp"
                 android:layout_marginBottom="5dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"

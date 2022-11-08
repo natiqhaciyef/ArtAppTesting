@@ -23,7 +23,7 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 class ImageSelectFragment @Inject constructor(
-    private val adapter: ImageApiAdapter
+    val adapter: ImageApiAdapter
 ): Fragment() {
 
     lateinit var viewModel: BaseViewModel

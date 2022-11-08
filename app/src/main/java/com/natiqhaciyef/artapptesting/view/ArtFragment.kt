@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -58,7 +59,7 @@ class ArtFragment @Inject constructor(
 
         floatActionBar.setOnClickListener {
             val action = ArtFragmentDirections.actionArtFragmentToDetailsFragment()
-            findNavController().navigate(action)
+            Navigation.findNavController(it).navigate(action)
         }
     }
 

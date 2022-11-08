@@ -1,4 +1,4 @@
-package com.natiqhaciyef.artapptesting
+package com.natiqhaciyef.artapptesting.util
 
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers

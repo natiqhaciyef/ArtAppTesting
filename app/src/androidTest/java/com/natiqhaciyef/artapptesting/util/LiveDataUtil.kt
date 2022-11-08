@@ -1,4 +1,4 @@
-package com.natiqhaciyef.artapptesting
+package com.natiqhaciyef.artapptesting.util
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer

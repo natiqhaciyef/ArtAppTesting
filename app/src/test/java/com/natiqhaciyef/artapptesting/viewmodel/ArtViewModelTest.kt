@@ -2,10 +2,9 @@ package com.natiqhaciyef.artapptesting.viewmodel
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.google.common.truth.Truth.assertThat
-import com.natiqhaciyef.artapptesting.MainCoroutineRule
-import com.natiqhaciyef.artapptesting.getOrAwaitValue
+import com.natiqhaciyef.artapptesting.util.MainCoroutineRule
+import com.natiqhaciyef.artapptesting.util.getOrAwaitValue
 import com.natiqhaciyef.artapptesting.repository.FakeArtRepository
-import com.natiqhaciyef.artapptesting.util.Resource
 import com.natiqhaciyef.artapptesting.util.Status
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import org.junit.Before
